@@ -1,0 +1,18 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "kasir",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-12-10",
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "pos-db",
+			"database_id": "840807d5-5a4f-49ae-ad8c-990ea4f0591c",
+			"remote": true
+		}
+	],
+	"assets": {
+		"directory": "./assets",
+		"binding": "ASSETS"
+	}
+}
