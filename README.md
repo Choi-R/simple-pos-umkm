@@ -5,7 +5,6 @@ Halaman utama untuk transaksi harian.
 - **Cari Barang**: Ketik nama barang di kotak pencarian atas. Daftar pilihan barang akan muncul otomatis.
     - *Tips*: Klik barang dari daftar untuk mengisi harga otomatis dan set Jumlah = 1.
 - **Tambah ke Keranjang**: Masukkan Jumlah (Qty) dan Harga (jika belum ada), lalu klik "Tambah ke Keranjang" (atau tekan Enter di kolom Harga).
-    - *Input Cerdas*: Angka harga dan jumlah akan otomatis diberi titik pemisah ribuan (contoh: ketik `30000` jadi `30.000`).
 - **Kelola Keranjang**: Lihat daftar belanjaan di bawah tombol. Klik "Hapus" jika ingin membatalkan barang.
 - **Pembayaran**:
     - Lihat "Total Tagihan".
@@ -18,14 +17,13 @@ Halaman untuk mengelola stok barang toko.
 - **Input Barang Baru**:
     - Isi **Nama Barang**, **Harga Beli**, dan **Harga Jual**.
     - Klik "Simpan Barang".
-    - *Catatan Penting*: Barang yang baru ditambah akan **langsung** bisa dicari di menu Kasir, tanpa perlu loading lama!
 - **Daftar Barang**: Lihat semua barang yang sudah tersimpan. Klik ikon sampah (🗑️) untuk menghapus barang.
 
 ---
 
 # Simple POS (Point of Sale) Application
 
-A lightweight, offline-capable Point of Sale application built for UMKM (Micro, Small, and Medium Enterprises). Designed for speed, reliability, and ease of use, utilizing Cloudflare's edge network for high performance.
+A simple, lightweight Point of Sale application built for UMKM (Micro, Small, and Medium Enterprises). Designed for speed, reliability, and ease of use, utilizing Cloudflare's edge network for high performance.
 
 ---
 
@@ -38,7 +36,7 @@ A lightweight, offline-capable Point of Sale application built for UMKM (Micro, 
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v16.13.0 or later).
-- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/) (installed automatically via `npm`).
+- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/).
 
 ### Installation
 
@@ -74,12 +72,6 @@ To deploy your changes to the live Cloudflare Worker context:
 ```bash
 npm run deploy
 ```
-
-This command will:
-1.  Minify the code.
-2.  Upload assets/HTML.
-3.  Deploy the worker script.
-4.  Update the live URL.
 
 ### Database Management
 To inspect or query the production database manually:
