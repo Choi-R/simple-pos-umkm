@@ -373,10 +373,6 @@
             cartItems.push({ name, qty, price, total: qty * price });
             renderCart();
             kasirEls.name.value = ''; kasirEls.qty.value = '1'; kasirEls.price.value = '';
-
-            // Focus back to name but ensure dropdown stays hidden
-            kasirEls.name.focus();
-            dropdown.classList.add('hidden');
         }
 
         function deleteItem(idx) { cartItems.splice(idx, 1); renderCart(); }
