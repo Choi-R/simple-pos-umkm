@@ -5,5 +5,4 @@ CREATE TABLE items (
     buy_price INTEGER DEFAULT 0,
     sell_price INTEGER DEFAULT 0
 );
--- Seed some data
 INSERT INTO items (name, buy_price, sell_price) VALUES ('Indomie', 3000, 3500);
