@@ -1,4 +1,4 @@
-## 📖 User Manual (Panduan Pengguna)
+## 📖 Panduan Pengguna
 
 ### 1. 🛒 Menu Kasir
 Halaman utama untuk transaksi harian.
