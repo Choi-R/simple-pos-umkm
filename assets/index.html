@@ -334,11 +334,11 @@
                 receipt.line(item.name);
 
                 const left = `${item.qty} x ${formatRp(item.price)}`;
-                const right = formatRp(item.total);
-
+                const valStr = formatRp(item.total);
+                const spaceLen = 30 - left.length - valStr.length;
                 const spaces = spaceLen > 0 ? ' '.repeat(spaceLen) : ' ';
 
-                receipt.line(left + spaces + right);
+                receipt.line(left + spaces + valStr);
             });
 
             receipt.line('-'.repeat(30));
